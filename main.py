@@ -98,6 +98,7 @@ for x in range(len(ENSEMBLES)):
     for x in range(len(ensemble)):
         balance = ensemble[x]
         ensemble[x] = play_game(balance)
-    if sum(ensemble) > 100:
+    # If they have more than they started with, that's a win!
+    if sum(ensemble) > INITIAL_AMOUNT:
         WINNING_ENSEMBLES += 1
 print_results()

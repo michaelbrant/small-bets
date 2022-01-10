@@ -24,6 +24,12 @@ global WINNING_ENSEMBLES
 WINNING_ENSEMBLES = 0
 
 
+'''
+ENSEMBLES should be an array of arrays. Each ensemble is a person but a person can have multiple bets.
+For example, if there were 2 ensembles and each ensemble had 4 bets of 25%, initial ENSEMBLES value would look like:
+[[25,25,25,25],[25,25,25,25]]
+Each person, AKA "ensemble", will get to play 4 games.
+'''
 def initialize_ensembles(bet_percent=1):
     for ensemble in range(NUMBER_OR_ENSEMBLES):
         num_bets = int(INITIAL_AMOUNT // (INITIAL_AMOUNT * bet_percent))
@@ -32,6 +38,7 @@ def initialize_ensembles(bet_percent=1):
 
 
 def flip_coin(bet):
+    # 50/50 chance
     if random.randrange(2):
         return bet * WIN_TAKE
     else:
@@ -40,6 +47,9 @@ def flip_coin(bet):
 
 def play_game(balance):
     for x in range(NUMBER_OF_COIN_FLIPS):
+        ''' 
+        If a person has more than the MAX_BET, they can't bet their entire balance.
+        '''
         if balance > MAX_BET:
             winnings = flip_coin(MAX_BET)
             balance = (balance-MAX_BET) + winnings

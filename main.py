@@ -6,11 +6,11 @@ LOSE_TAKE = .6  # Lose: Lose 40%
 
 NUMBER_OF_COIN_FLIPS = 1000
 
-# An ensemble is a series of flips. A single ensemble is you.
+# An ensemble is a series of coin flips. Any single ensemble is you.
 NUMBER_OR_ENSEMBLES = 1000
 
-# The bet amount is percent of your money you put into each bet
-# Try changing this to .25 to see what will happen when you do 4 bets at 25% of always doing max bet!
+# The BET_PERCENT is percent of your money you put into each bet
+# Try changing this to .25 to see what will happen when you do 4 bets at 25% instead of always doing 1 bet of 100%!
 BET_PERCENT = 1
 
 # The claim is that the average amount of money won across all ensembles will go up, but for any 1 ensemble over a long period of

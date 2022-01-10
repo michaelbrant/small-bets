@@ -1,6 +1,6 @@
 # Ergodic Experiment
 
-Based on [this video]('https://www.youtube.com/watch?v=f1vXAHGIpfc&t=360s&ab_channel=GreshamCollege').
+Based on [this video](https://www.youtube.com/watch?v=f1vXAHGIpfc&t=360s&ab_channel=GreshamCollege).
 
 Run this experiment with this command: 
 

@@ -80,15 +80,15 @@ def format_money(amount):
 
 
 def print_results():
-    print("Number OF ENSEMBLES: " + str(NUMBER_OR_ENSEMBLES))
-    print("Number OF Coin Flips: " + str(NUMBER_OF_COIN_FLIPS))
+    print("Number of ENSEMBLES: " + str(NUMBER_OR_ENSEMBLES))
+    print("Number of Coin Flips: " + str(NUMBER_OF_COIN_FLIPS))
     print("Total Money in System: " + str(format_money(get_total_won())))
     print("Max Final Balance: " + str(format_money(get_max_won())))
     print("Average Final Balance: " + str(format_money(get_average_won())))
     print("Median Final Balance: " + str(format_money(get_median_won())))
-    print("Number of Ensembles with less than $100: " +
+    print("Number of Ensembles with LESS than $100: " +
           str(NUMBER_OR_ENSEMBLES-WINNING_ENSEMBLES))
-    print("Number of Ensembles with more than $100: " +
+    print("Number of Ensembles with MORE than $100: " +
           str(WINNING_ENSEMBLES))
 
 
